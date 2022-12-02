@@ -3,10 +3,9 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
-try: 
-    link = "http://suninjuly.github.io/file_input.html"
+try:
     browser = webdriver.Chrome()
-    browser.get(link)
+    browser.get("http://suninjuly.github.io/file_input.html")
 
     # Заполняем поля с именем, фамилией и email
     input1 = browser.find_element(By.NAME, "firstname")
